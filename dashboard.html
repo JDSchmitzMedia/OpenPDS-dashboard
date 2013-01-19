@@ -1,0 +1,31 @@
+<h1>Welcome to your OpenPDS Dashboard</h1>
+<div id="sampleArea"></div>
+<!--<script>
+$.getJSON('json/data2.json', function(data) {
+    var template = $('#personTpl').html();
+    var html = Mustache.to_html(template, data);
+    $('#sampleArea').html(html);
+});
+</script>-->
+<script src="mustache.js" type="text/javascript"></script>
+<script src="jquery-1.9.0.min.js" type="text/javascript"></script>
+<script src="dashboard.js" type="text/javascript"></script>
+<!--<script id="personTpl" type="text/template">
+var data = {
+    employees: [
+    {   firstName: "Christophe",
+        lastName: "Coenraets"},
+    {   firstName: "John",
+        lastName: "Smith"}
+    ]};
+var template = "Employees:<ul>{{#employees}}" +
+                            "<li>{{firstName}} {{lastName}}</li>" +
+                            "{{/employees}}</ul>";
+var html = Mustache.to_html(template, data);
+$('#sampleArea').html(html);
+</script>-->
+
+<script id="personTpl" type="text/template">
+<h1>{{firstName}} {{lastName}}</h1>
+<p>Blog URL: <a href="{{blogURL}}">{{blogURL}}</a></p>
+</script>
