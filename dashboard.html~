@@ -14,7 +14,7 @@
 <script id="dashboardTpl" type="text/template">
 <div class="hero-unit">
 <!--<h3>scope=<a href="">{{key}}</a></h3>-->
-<!--<span class="label">{{key}}</span>-->
+<span class="label">{{key}}</span>
 <h4><button type="button" class="btn btn-medium btn-primary disabled" disabled="disabled">{{client}}</button> has been granted access to: <a href="">{{description}}</a></h4>
 
 </div>
